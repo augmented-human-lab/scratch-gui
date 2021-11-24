@@ -31,5 +31,11 @@ FROM nginx:1.20.1 AS run-stage
 
 # copy build files
 COPY --from=build-stage /usr/src/scratch-gui/build /usr/share/nginx/html
+COPY entrypoint.sh /usr/share/nginx/
+
+RUN chmod +x /usr/share/nginx/entrypoint.sh
+ENTRYPOINT ["/usr/share/nginx/entrypoint.sh"]
 
 EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
