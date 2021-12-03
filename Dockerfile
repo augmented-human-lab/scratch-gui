@@ -21,6 +21,7 @@ COPY --from=vm-stage /usr/src/scratch-vm ./node_modules/scratch-vm/
 COPY . .
 
 # Update version number
+ARG BUILD_VERSION
 RUN npm version $BUILD_VERSION --no-git-tag-version
 
 # Run build
