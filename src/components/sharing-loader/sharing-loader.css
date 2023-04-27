@@ -180,3 +180,9 @@
     height: 20px;
     margin: 5px 0;
 }
+
+.sub-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.75rem 0;
+}
