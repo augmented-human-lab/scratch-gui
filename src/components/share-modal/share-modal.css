@@ -31,6 +31,25 @@
     padding: 1.5rem 2.25rem;
 }
 
+.challenge-title {
+    color: #575e75;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.challenge-description {
+    color: #084551;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.125rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
 .join-flow-input-title {
     font-weight: bold;
     margin-bottom: .5rem;
@@ -56,7 +75,32 @@
     font-size: .875rem;
 }
 
-.modal-flush-bottom-button:hover {
+.field-short:focus {
+    box-shadow: 0 0 0 0.25rem rgb(77, 151, 255, 25%);
+    outline: none;
+    border: 1px solid #4d97ff;
+    transition: all .5s ease, font-size 0s;
+}
+
+.field-short {
+    height: 2.75rem;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: white;
+    margin: 0.5rem;
+    transition: all .5s ease, font-size 0s;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 0 1rem;
+    color: #575e75;
+    font-size: .875rem;
+}
+
+.modal-flush-bottom-button:disabled {
+    background-color: rgba(8, 69, 81, 0.7);
+    cursor: not-allowed;
+}
+
+.modal-flush-bottom-button:hover:enabled {
     transition: background-color .25s ease;
     background-color: #005766;
 }
@@ -78,6 +122,11 @@
     font-size: 1.25rem;
     font-weight: bold;
     overflow: visible;
+}
+
+.multi-item-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .row {

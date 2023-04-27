@@ -16,14 +16,19 @@ class ShareModal extends React.Component {
             'handleCancel',
             'handleSubmit',
             'handleChangeTitle',
-            'handleChangeAuthor'
+            'handleChangeAuthor',
+            'handleChangeEmail',
+            'handleChangeMobile'
         ]);
 
         this.state = {
             projectName: '',
             authorName: '',
+            email: '',
+            mobile: '',
             authorNameRequired: false,
-            projectNameRequired: false
+            projectNameRequired: false,
+            isSubmitDisabled: true
         };
     }
 
@@ -32,28 +37,39 @@ class ShareModal extends React.Component {
     }
 
     handleChangeTitle (event) {
-        this.setState({projectName: event.target.value});
-        this.setState({projectNameRequired: false});
+        this.setState({projectName: event.target.value}, () => {
+            this.handleNonEmptyFields();
+        });
     }
 
     handleChangeAuthor (event) {
-        this.setState({authorName: event.target.value});
-        this.setState({authorNameRequired: false});
+        this.setState({authorName: event.target.value}, () => {
+            this.handleNonEmptyFields();
+        });
+    }
+
+    handleChangeEmail (event) {
+        this.setState({email: event.target.value}, () => {
+            this.handleNonEmptyFields();
+        });
+    }
+
+    handleChangeMobile (event) {
+        this.setState({mobile: event.target.value}, () => {
+            this.handleNonEmptyFields();
+        });
     }
 
     handleSubmit (uploadProjectCallback) {
-        if (this.state.projectName.trim() === '') {
-            this.setState({projectNameRequired: true});
-        }
-
-        if (this.state.authorName.trim() === '') {
-            this.setState({authorNameRequired: true});
-        }
-
-        if (this.state.projectName.trim() === '' || this.state.authorName.trim() === '') return;
+        if (this.state.isSubmitDisabled) return;
 
         this.props.onShareLoading();
         uploadProjectCallback(this.state.projectName.trim(), `By ${this.state.authorName.trim()}`);
+    }
+
+    handleNonEmptyFields () {
+        this.setState({isSubmitDisabled: this.state.projectName.trim() === '' || this.state.authorName.trim() === '' ||
+                this.state.email.trim() === '' || this.state.mobile.trim() === ''});
     }
 
     render () {
@@ -61,12 +77,17 @@ class ShareModal extends React.Component {
             <ShareModalComponent
                 projectName={this.state.projectName}
                 authorName={this.state.authorName}
+                email={this.state.email}
+                mobile={this.state.mobile}
                 projectNameRequired={this.state.projectNameRequired}
                 authorNameRequired={this.state.authorNameRequired}
+                isSubmitDisabled={this.state.isSubmitDisabled}
                 onCancel={this.handleCancel}
                 onSubmit={this.handleSubmit}
                 onChangeTitle={this.handleChangeTitle}
                 onChangeAuthor={this.handleChangeAuthor}
+                onChangeEmail={this.handleChangeEmail}
+                onChangeMobile={this.handleChangeMobile}
             />
         );
     }

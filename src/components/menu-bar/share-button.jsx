@@ -25,19 +25,11 @@ const ShareButton = ({
         )}
         onClick={onOpenShareProject}
     >
-        {isShared ? (
-            <FormattedMessage
-                defaultMessage="Shared"
-                description="Label for shared project"
-                id="gui.menuBar.isShared"
-            />
-        ) : (
-            <FormattedMessage
-                defaultMessage="Share"
-                description="Label for project share button"
-                id="gui.menuBar.share"
-            />
-        )}
+        <FormattedMessage
+            defaultMessage="Submit to Challenge!"
+            description="Label for project share button"
+            id="gui.menuBar.shared"
+        />
     </Button>
 );
 

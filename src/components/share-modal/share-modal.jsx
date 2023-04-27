@@ -14,7 +14,7 @@ const onClick = (onSubmit, uploadProjectCallback) => () => {
 const ShareModal = props => (
     <Modal
         className={styles.modalContent}
-        contentLabel={'Share Project'}
+        contentLabel={'Submit to Challenge'}
         overlayClassName={styles.modalOverlay}
         id="shareProject"
         onRequestClose={props.onCancel}
@@ -22,68 +22,84 @@ const ShareModal = props => (
         <div>
             <Box className={styles.body}>
                 <div>
-                    <p className={styles.joinFlowInputTitle}>
+                    <div className={styles.challengeTitle}>
                         <FormattedMessage
-                            defaultMessage="Project Name"
-                            description="Label for project name"
-                            id="gui.shareProject.projectName"
+                            defaultMessage="Get Coding and be in to Win!"
+                            id="gui.shareProject.challenge"
                         />
-                    </p>
-                    <div className={styles.row}>
-                        <input
-                            name="projectName"
-                            className={styles.field}
-                            autoCapitalize="off"
-                            autoComplete="off"
-                            autoCorrect="off"
-                            id="projectName"
-                            placeholder="Project Name"
-                            spellCheck="false"
-                            onChange={props.onChangeTitle}
-                            value={props.projectName}
-                        />
-                        {props.projectNameRequired ? (
-                            <div className={styles.validationMessage}>
-                                <FormattedMessage
-                                    defaultMessage="Required"
-                                    description="Label for project name required"
-                                    id="gui.shareProject.projectRequired"
-                                />
-                            </div>) : null}
+                    </div>
+                    <br />
+                    <div className={styles.challengeDescription}>
+                        <a
+                            className={styles.challengeDescription}
+                            href="https://challenge.ahlab.org"
+                            target="_blank"
+                            referrerPolicy="no-referrer"
+                            rel="noreferrer"
+                        >
+                            <FormattedMessage
+                                defaultMessage="Check out the Challenge"
+                                id="gui.shareProject.readMore"
+                            />
+                        </a>
                     </div>
                 </div>
 
-                <div>
-                    <p className={styles.joinFlowInputTitle}>
-                        <FormattedMessage
-                            defaultMessage="Author Name"
-                            description="Label for author name"
-                            id="gui.shareProject.authorName"
-                        />
-                    </p>
-                    <div className={styles.row}>
-                        <input
-                            name="authorName"
-                            className={styles.field}
-                            autoCapitalize="off"
-                            autoComplete="off"
-                            autoCorrect="off"
-                            id="authorName"
-                            placeholder="Author Name"
-                            spellCheck="false"
-                            onChange={props.onChangeAuthor}
-                            value={props.authorName}
-                        />
-                        {props.authorNameRequired ? (
-                            <div className={styles.validationMessage}>
-                                <FormattedMessage
-                                    defaultMessage="Required"
-                                    description="Label for author name required"
-                                    id="gui.shareProject.authorRequired"
-                                />
-                            </div>) : null}
-                    </div>
+                <div className={styles.multiItemRow}>
+                    <input
+                        name="projectName"
+                        className={styles.fieldShort}
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        id="projectName"
+                        placeholder="Project Name"
+                        spellCheck="false"
+                        onChange={props.onChangeTitle}
+                        value={props.projectName}
+                    />
+                </div>
 
+                <div className={styles.multiItemRow}>
+                    <input
+                        name="authorName"
+                        className={styles.fieldShort}
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        id="authorName"
+                        placeholder="Author Name"
+                        spellCheck="false"
+                        onChange={props.onChangeAuthor}
+                        value={props.authorName}
+                    />
+                </div>
+
+                <div className={styles.multiItemRow}>
+                    <input
+                        name="email"
+                        className={styles.fieldShort}
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        id="email"
+                        placeholder="Parent's Email"
+                        spellCheck="false"
+                        onChange={props.onChangeEmail}
+                        value={props.email}
+                    />
+                    <input
+                        name="mobile"
+                        className={styles.fieldShort}
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        id="mobile"
+                        placeholder="Parent's Mobile"
+                        spellCheck="false"
+                        onChange={props.onChangeMobile}
+                        value={props.mobile}
+                    />
                 </div>
 
             </Box>
@@ -91,12 +107,13 @@ const ShareModal = props => (
                 <SB3Downloader>{(_, downloadProjectCallback, uploadProjectCallback) => (
                     <button
                         className={styles.modalFlushBottomButton}
+                        disabled={props.isSubmitDisabled}
                         id="projectUpload"
                         type="submit"
                         onClick={onClick(props.onSubmit, uploadProjectCallback)}
                     >
                         <FormattedMessage
-                            defaultMessage="Share!"
+                            defaultMessage="Submit!"
                             description="Label for share project"
                             id="gui.shareProject.shareProjectFile"
                         />
@@ -113,10 +130,13 @@ ShareModal.propTypes = {
     onSubmit: PropTypes.func.isRequired,
     onChangeTitle: PropTypes.func.isRequired,
     onChangeAuthor: PropTypes.func.isRequired,
+    onChangeEmail: PropTypes.func.isRequired,
+    onChangeMobile: PropTypes.func.isRequired,
     projectName: PropTypes.string,
     authorName: PropTypes.string,
-    authorNameRequired: PropTypes.bool,
-    projectNameRequired: PropTypes.bool
+    email: PropTypes.string,
+    mobile: PropTypes.string,
+    isSubmitDisabled: PropTypes.bool
 };
 
 const mapStateToProps = () => ({});
