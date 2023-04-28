@@ -2,6 +2,8 @@ import ScratchStorage from 'scratch-storage';
 
 import defaultProject from './default-project';
 
+const CUSTOM_IMAGE_IDS = ['d351b90f60cd441ac44d90c2766f3e4a', '0bca1684ab859fc450e81d1e6f89ef5c'];
+
 /**
  * Wrapper for ScratchStorage which adds default web sources.
  * @todo make this more configurable
@@ -54,6 +56,7 @@ class Storage extends ScratchStorage {
         this.assetHost = assetHost;
     }
     getAssetGetConfig (asset) {
+        if (CUSTOM_IMAGE_IDS.includes(asset.assetId)) return `http://localhost:8000/Downloads/${asset.assetId}.${asset.dataFormat}`;
         return `${this.assetHost}/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;
     }
     getAssetCreateConfig (asset) {

@@ -105,9 +105,8 @@ class LibraryItem extends React.PureComponent {
     }
     render () {
         const iconMd5 = this.curIconMd5();
-        const iconURL = iconMd5 ?
-            `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/` :
-            this.props.iconRawURL;
+        const iconURL = this.props.origin || !iconMd5 ? this.props.iconRawURL :
+            `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/`;
         return (
             <LibraryItemComponent
                 bluetoothRequired={this.props.bluetoothRequired}
@@ -168,6 +167,7 @@ LibraryItem.propTypes = {
     onMouseEnter: PropTypes.func.isRequired,
     onMouseLeave: PropTypes.func.isRequired,
     onSelect: PropTypes.func.isRequired,
+    origin: PropTypes.string,
     showPlayButton: PropTypes.bool
 };
 

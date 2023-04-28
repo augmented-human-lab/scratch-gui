@@ -6,6 +6,11 @@ export default defineMessages({
         description: 'Tag for filtering a library for everything',
         id: 'gui.libraryTags.all'
     },
+    abi: {
+        defaultMessage: 'Bioengineering the Future',
+        description: 'Tag for filtering a library for ABI',
+        id: 'gui.libraryTags.abi'
+    },
     animals: {
         defaultMessage: 'Animals',
         description: 'Tag for filtering a library for animals',
