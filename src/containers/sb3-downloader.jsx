@@ -11,7 +11,7 @@ import {
     closeLoadingShare, openShareModal, openConfirmationModal
 } from '../reducers/modals.js';
 
-const CLOUD_RUN_SERVICE = 'http://146.148.32.205:8080/api';
+const CLOUD_RUN_SERVICE = 'https://padlet.ahlab.org/api';
 
 /**
  * Project saver component passes a downloadProject function to its child.

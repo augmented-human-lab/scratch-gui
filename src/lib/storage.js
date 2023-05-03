@@ -56,7 +56,7 @@ class Storage extends ScratchStorage {
         this.assetHost = assetHost;
     }
     getAssetGetConfig (asset) {
-        if (CUSTOM_IMAGE_IDS.includes(asset.assetId)) return `http://localhost:8000/Downloads/${asset.assetId}.${asset.dataFormat}`;
+        if (CUSTOM_IMAGE_IDS.includes(asset.assetId)) return `https://sankhacooray.com/abi/${asset.assetId}.${asset.dataFormat}`;
         return `${this.assetHost}/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;
     }
     getAssetCreateConfig (asset) {
