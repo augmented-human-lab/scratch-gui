@@ -98,7 +98,7 @@ var _window, _window$configs, _window2, _window2$configs, _window3, _window3$con
 
 // log environment variables
 _lib_log__WEBPACK_IMPORTED_MODULE_11__["default"].info("version ".concat(((_window = window) === null || _window === void 0 ? void 0 : (_window$configs = _window.configs) === null || _window$configs === void 0 ? void 0 : _window$configs['APP_VERSION']) || "0.1.0"));
-_lib_log__WEBPACK_IMPORTED_MODULE_11__["default"].info("cloud_run_service ".concat(((_window2 = window) === null || _window2 === void 0 ? void 0 : (_window2$configs = _window2.configs) === null || _window2$configs === void 0 ? void 0 : _window2$configs['CLOUD_RUN_SERVICE']) || "http://146.148.32.205:8080/api"));
+_lib_log__WEBPACK_IMPORTED_MODULE_11__["default"].info("cloud_run_service ".concat(((_window2 = window) === null || _window2 === void 0 ? void 0 : (_window2$configs = _window2.configs) === null || _window2$configs === void 0 ? void 0 : _window2$configs['CLOUD_RUN_SERVICE']) || "https://padlet.ahlab.org/api"));
 _lib_log__WEBPACK_IMPORTED_MODULE_11__["default"].info("padlet_target ".concat(((_window3 = window) === null || _window3 === void 0 ? void 0 : (_window3$configs = _window3.configs) === null || _window3$configs === void 0 ? void 0 : _window3$configs['PADLET_TARGET']) || "https://padlet.com/KiwriousABI/kiwrious-abi-challenge-s9r9lcjwvgdf4qq0"));
 _lib_log__WEBPACK_IMPORTED_MODULE_11__["default"].info("analytics_id ".concat(((_window4 = window) === null || _window4 === void 0 ? void 0 : (_window4$configs = _window4.configs) === null || _window4$configs === void 0 ? void 0 : _window4$configs['GA_ID']) || process.env.GA_ID));
 
