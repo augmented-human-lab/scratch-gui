@@ -2,9 +2,7 @@
     {
         "name": "abi-a",
         "tags": [
-            "people",
-            "person",
-            "drawing"
+            "abi"
         ],
         "assetId": "d351b90f60cd441ac44d90c2766f3e4a",
         "origin": "external",
@@ -16,6 +14,9 @@
     },
     {
         "name": "abi-mind-a",
+        "tags": [
+            "abi"
+        ],
         "assetId": "0bca1684ab859fc450e81d1e6f89ef5c",
         "md5ext": "0bca1684ab859fc450e81d1e6f89ef5c.png",
         "origin": "external",
@@ -9477,14 +9478,15 @@
         "rotationCenterY": 75
     },
     {
-        "name": "Skeleton-a",
+        "name": "ABI-Skeleton-a",
         "tags": [
             "fantasy",
             "spooky",
             "halloween",
             "bones",
             "monster",
-            "alex eben meyer"
+            "alex eben meyer",
+            "abi"
         ],
         "assetId": "c4d755c672a0826caa7b6fb767cc3f9b",
         "bitmapResolution": 1,
@@ -9494,14 +9496,15 @@
         "rotationCenterY": 100
     },
     {
-        "name": "Skeleton-b",
+        "name": "ABI-Skeleton-b",
         "tags": [
             "fantasy",
             "spooky",
             "halloween",
             "bones",
             "monster",
-            "alex eben meyer"
+            "alex eben meyer",
+            "abi"
         ],
         "assetId": "f4a00b2bd214b1d8412a2e89b2030354",
         "bitmapResolution": 1,
@@ -9511,14 +9514,15 @@
         "rotationCenterY": 90
     },
     {
-        "name": "Skeleton-d",
+        "name": "ABI-Skeleton-d",
         "tags": [
             "fantasy",
             "spooky",
             "halloween",
             "bones",
             "monster",
-            "alex eben meyer"
+            "alex eben meyer",
+            "abi"
         ],
         "assetId": "67108e6b1d0f41aba2f94f81114ebf59",
         "bitmapResolution": 1,
@@ -9528,14 +9532,15 @@
         "rotationCenterY": 100
     },
     {
-        "name": "Skeleton-e",
+        "name": "ABI-Skeleton-e",
         "tags": [
             "fantasy",
             "spooky",
             "halloween",
             "bones",
             "monster",
-            "alex eben meyer"
+            "alex eben meyer",
+            "abi"
         ],
         "assetId": "3cfff37072a4138b977ba406c290b419",
         "bitmapResolution": 1,

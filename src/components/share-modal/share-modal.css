@@ -50,6 +50,13 @@
     text-align: center;
 }
 
+.centred-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .join-flow-input-title {
     font-weight: bold;
     margin-bottom: .5rem;

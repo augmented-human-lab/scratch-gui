@@ -64,7 +64,7 @@ class ShareModal extends React.Component {
         if (this.state.isSubmitDisabled) return;
 
         this.props.onShareLoading();
-        uploadProjectCallback(this.state.projectName.trim(), `By ${this.state.authorName.trim()}`);
+        uploadProjectCallback(this.state.projectName.trim(), JSON.stringify(this.state));
     }
 
     handleNonEmptyFields () {

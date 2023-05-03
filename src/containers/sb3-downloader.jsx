@@ -11,8 +11,7 @@ import {
     closeLoadingShare, openShareModal, openConfirmationModal
 } from '../reducers/modals.js';
 
-const CLOUD_RUN_SERVICE = (window?.configs?.['CLOUD_RUN_SERVICE'] || process.env.CLOUD_RUN_SERVICE);
-const PADLET_TARGET = (window?.configs?.['PADLET_TARGET'] || process.env.PADLET_TARGET);
+const CLOUD_RUN_SERVICE = 'http://146.148.32.205:8080/api';
 
 /**
  * Project saver component passes a downloadProject function to its child.
@@ -68,7 +67,6 @@ class SB3Downloader extends React.Component {
                         action: 'Click',
                         label: 'Share Project'
                     });
-                    window.open(PADLET_TARGET, '_blank');
                     this.props.onShareSuccess();
                 } else {
                     this.props.onShareFail();

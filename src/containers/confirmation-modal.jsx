@@ -9,7 +9,7 @@ import {
 
 import ConfirmationModalComponent from '../components/share-modal/confirmation-modal.jsx';
 
-const PADLET_TARGET = (window?.configs?.['PADLET_TARGET'] || process.env.PADLET_TARGET);
+const PADLET_TARGET = 'https://padlet.com/KiwriousABI/kiwrious-abi-challenge-s9r9lcjwvgdf4qq0';
 
 class ConfirmationModal extends React.Component {
     constructor (props) {

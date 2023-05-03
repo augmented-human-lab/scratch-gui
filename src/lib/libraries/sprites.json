@@ -46,6 +46,70 @@
         "blocks": {}
     },
     {
+        "name": "ABI Skeleton",
+        "tags": [
+            "fantasy",
+            "spooky",
+            "halloween",
+            "bones",
+            "monster",
+            "alex eben meyer",
+            "abi"
+        ],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "assetId": "c4d755c672a0826caa7b6fb767cc3f9b",
+                "name": "abi-skeleton-a",
+                "bitmapResolution": 1,
+                "md5ext": "c4d755c672a0826caa7b6fb767cc3f9b.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 59,
+                "rotationCenterY": 100
+            },
+            {
+                "assetId": "f4a00b2bd214b1d8412a2e89b2030354",
+                "name": "abi-skeleton-b",
+                "bitmapResolution": 1,
+                "md5ext": "f4a00b2bd214b1d8412a2e89b2030354.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 69,
+                "rotationCenterY": 90
+            },
+            {
+                "assetId": "67108e6b1d0f41aba2f94f81114ebf59",
+                "name": "abi-skeleton-d",
+                "bitmapResolution": 1,
+                "md5ext": "67108e6b1d0f41aba2f94f81114ebf59.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 51,
+                "rotationCenterY": 100
+            },
+            {
+                "assetId": "3cfff37072a4138b977ba406c290b419",
+                "name": "abi-skeleton-e",
+                "bitmapResolution": 1,
+                "md5ext": "3cfff37072a4138b977ba406c290b419.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 55,
+                "rotationCenterY": 89
+            }
+        ],
+        "sounds": [
+            {
+                "assetId": "74f1c07e0bcd7811fd9d456a5f8667f8",
+                "name": "rattle",
+                "dataFormat": "wav",
+                "format": "",
+                "rate": 44100,
+                "sampleCount": 26368,
+                "md5ext": "74f1c07e0bcd7811fd9d456a5f8667f8.wav"
+            }
+        ],
+        "blocks": {}
+    },
+    {
         "name": "Abby",
         "tags": [
             "people",
@@ -11944,69 +12008,6 @@
                 "rate": 44100,
                 "sampleCount": 1032,
                 "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-            }
-        ],
-        "blocks": {}
-    },
-    {
-        "name": "Skeleton",
-        "tags": [
-            "fantasy",
-            "spooky",
-            "halloween",
-            "bones",
-            "monster",
-            "alex eben meyer"
-        ],
-        "isStage": false,
-        "variables": {},
-        "costumes": [
-            {
-                "assetId": "c4d755c672a0826caa7b6fb767cc3f9b",
-                "name": "skeleton-a",
-                "bitmapResolution": 1,
-                "md5ext": "c4d755c672a0826caa7b6fb767cc3f9b.svg",
-                "dataFormat": "svg",
-                "rotationCenterX": 59,
-                "rotationCenterY": 100
-            },
-            {
-                "assetId": "f4a00b2bd214b1d8412a2e89b2030354",
-                "name": "skeleton-b",
-                "bitmapResolution": 1,
-                "md5ext": "f4a00b2bd214b1d8412a2e89b2030354.svg",
-                "dataFormat": "svg",
-                "rotationCenterX": 69,
-                "rotationCenterY": 90
-            },
-            {
-                "assetId": "67108e6b1d0f41aba2f94f81114ebf59",
-                "name": "skeleton-d",
-                "bitmapResolution": 1,
-                "md5ext": "67108e6b1d0f41aba2f94f81114ebf59.svg",
-                "dataFormat": "svg",
-                "rotationCenterX": 51,
-                "rotationCenterY": 100
-            },
-            {
-                "assetId": "3cfff37072a4138b977ba406c290b419",
-                "name": "skeleton-e",
-                "bitmapResolution": 1,
-                "md5ext": "3cfff37072a4138b977ba406c290b419.svg",
-                "dataFormat": "svg",
-                "rotationCenterX": 55,
-                "rotationCenterY": 89
-            }
-        ],
-        "sounds": [
-            {
-                "assetId": "74f1c07e0bcd7811fd9d456a5f8667f8",
-                "name": "rattle",
-                "dataFormat": "wav",
-                "format": "",
-                "rate": 44100,
-                "sampleCount": 26368,
-                "md5ext": "74f1c07e0bcd7811fd9d456a5f8667f8.wav"
             }
         ],
         "blocks": {}
