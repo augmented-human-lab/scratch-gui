@@ -5,13 +5,13 @@
         "tags": [
             "abi"
         ],
+        "origin": "external",
         "isStage": false,
         "variables": {},
         "costumes": [
             {
                 "assetId": "d3425b7d8ddaf1726c7a98c6cfbd63b6",
                 "md5ext": "d3425b7d8ddaf1726c7a98c6cfbd63b6.svg",
-                "origin": "external",
                 "name": "abi-flag-a",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -28,13 +28,13 @@
         "tags": [
             "abi"
         ],
+        "origin": "external",
         "isStage": false,
         "variables": {},
         "costumes": [
             {
                 "assetId": "9e73634463501a3c0edfee38dbbbbd9b",
                 "md5ext": "9e73634463501a3c0edfee38dbbbbd9b.svg",
-                "origin": "external",
                 "name": "abi-btf-a",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -51,13 +51,13 @@
         "tags": [
             "abi"
         ],
+        "origin": "external",
         "isStage": false,
         "variables": {},
         "costumes": [
             {
                 "assetId": "adf050497eaf9cb7710470f0f8b59fae",
                 "md5ext": "adf050497eaf9cb7710470f0f8b59fae.svg",
-                "origin": "external",
                 "name": "abi-brain-a",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -67,7 +67,6 @@
             {
                 "assetId": "1a8db49a3117fb21b7b9a304bf1ef611",
                 "md5ext": "1a8db49a3117fb21b7b9a304bf1ef611.svg",
-                "origin": "external",
                 "name": "abi-brain-b",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -77,7 +76,6 @@
             {
                 "assetId": "aa40c12d70e5ef507e7c89a13e42f2a1",
                 "md5ext": "aa40c12d70e5ef507e7c89a13e42f2a1.svg",
-                "origin": "external",
                 "name": "abi-brain-c",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -94,13 +92,13 @@
         "tags": [
             "abi"
         ],
+        "origin": "external",
         "isStage": false,
         "variables": {},
         "costumes": [
             {
                 "assetId": "2c80c81da63ac859f949c3aa951f4129",
                 "md5ext": "2c80c81da63ac859f949c3aa951f4129.svg",
-                "origin": "external",
                 "name": "abi-vr-george",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -117,13 +115,13 @@
         "tags": [
             "abi"
         ],
+        "origin": "external",
         "isStage": false,
         "variables": {},
         "costumes": [
             {
                 "assetId": "7e7385bf0550f3a77fa0567dd4c2e2b9",
                 "md5ext": "7e7385bf0550f3a77fa0567dd4c2e2b9.svg",
-                "origin": "external",
                 "name": "abi-vr-zally",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -140,13 +138,13 @@
         "tags": [
             "abi"
         ],
+        "origin": "external",
         "isStage": false,
         "variables": {},
         "costumes": [
             {
                 "assetId": "bda61928bf3dfbfaf25d245b1a2ca135",
                 "md5ext": "bda61928bf3dfbfaf25d245b1a2ca135.svg",
-                "origin": "external",
                 "name": "abi-vr-megan",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
@@ -163,13 +161,13 @@
         "tags": [
             "abi"
         ],
+        "origin": "external",
         "isStage": false,
         "variables": {},
         "costumes": [
             {
                 "assetId": "866ada171cfab20309272a51afd0841f",
                 "md5ext": "866ada171cfab20309272a51afd0841f.svg",
-                "origin": "external",
                 "name": "abi-skytower",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",

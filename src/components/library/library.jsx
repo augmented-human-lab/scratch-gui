@@ -230,7 +230,7 @@ class LibraryComponent extends React.Component {
                             onMouseEnter={this.handleMouseEnter}
                             onMouseLeave={this.handleMouseLeave}
                             onSelect={this.handleSelect}
-                            origin={dataItem.costumes ? dataItem.costumes[0].origin : null}
+                            origin={dataItem.origin ? dataItem.origin : null}
                         />
                     )) : (
                         <div className={styles.spinnerWrapper}>
