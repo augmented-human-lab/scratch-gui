@@ -87,6 +87,29 @@
         "blocks": {}
     },
     {
+        "name": "ABI Peter",
+        "rawURL": "https://sankhacooray.com/abi/87bac7db8b9715cab9f04530137a928e.png",
+        "tags": [
+            "abi"
+        ],
+        "origin": "external",
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "assetId": "87bac7db8b9715cab9f04530137a928e",
+                "md5ext": "87bac7db8b9715cab9f04530137a928e.png",
+                "name": "abi-peter",
+                "bitmapResolution": 2,
+                "dataFormat": "png",
+                "rotationCenterX": 105,
+                "rotationCenterY": 180
+            }
+        ],
+        "sounds": [],
+        "blocks": {}
+    },
+    {
         "name": "VR George",
         "rawURL": "https://sankhacooray.com/abi/2c80c81da63ac859f949c3aa951f4129.svg",
         "tags": [

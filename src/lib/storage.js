@@ -5,7 +5,7 @@ import defaultProject from './default-project';
 const CUSTOM_IMAGE_IDS = ['d3425b7d8ddaf1726c7a98c6cfbd63b6', '9e73634463501a3c0edfee38dbbbbd9b',
     'adf050497eaf9cb7710470f0f8b59fae', '1a8db49a3117fb21b7b9a304bf1ef611', 'aa40c12d70e5ef507e7c89a13e42f2a1',
     '2c80c81da63ac859f949c3aa951f4129', '7e7385bf0550f3a77fa0567dd4c2e2b9', 'bda61928bf3dfbfaf25d245b1a2ca135',
-    '866ada171cfab20309272a51afd0841f', '3f052d69f4cba5f63f77ea38811ba511'];
+    '866ada171cfab20309272a51afd0841f', '3f052d69f4cba5f63f77ea38811ba511', '87bac7db8b9715cab9f04530137a928e'];
 
 /**
  * Wrapper for ScratchStorage which adds default web sources.

@@ -70,6 +70,20 @@
         "rotationCenterY": 45
     },
     {
+        "name": "abi-peter",
+        "tags": [
+            "abi"
+        ],
+        "assetId": "87bac7db8b9715cab9f04530137a928e",
+        "md5ext": "87bac7db8b9715cab9f04530137a928e.png",
+        "origin": "external",
+        "rawURL": "https://sankhacooray.com/abi/87bac7db8b9715cab9f04530137a928e.png",
+        "bitmapResolution": 2,
+        "dataFormat": "png",
+        "rotationCenterX": 105,
+        "rotationCenterY": 180
+    },
+    {
         "name": "abi-vr-george",
         "tags": [
             "abi"
