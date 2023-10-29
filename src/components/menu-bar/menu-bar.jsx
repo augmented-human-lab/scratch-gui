@@ -621,6 +621,47 @@ class MenuBar extends React.Component {
                             </div>
                         )}
                     </div>
+                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
+                        {this.props.enableCommunity ? (
+                            (this.props.isShowingProject || this.props.isUpdating) && (
+                                <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
+                                    {
+                                        waitForUpdate => (
+                                            <CommunityButton
+                                                className={styles.menuBarButton}
+                                                /* eslint-disable react/jsx-no-bind */
+                                                onClick={() => {
+                                                    this.handleClickSeeCommunity(waitForUpdate);
+                                                }}
+                                                /* eslint-enable react/jsx-no-bind */
+                                            />
+                                        )
+                                    }
+                                </ProjectWatcher>
+                            )
+                        ) : (this.props.showComingSoon ? (
+                            <MenuBarItemTooltip id="community-button">
+                                <CommunityButton className={styles.menuBarButton} />
+                            </MenuBarItemTooltip>
+                        ) : [])}
+                    </div>
+                    <Divider className={classNames(styles.divider)} />
+                    <div className={styles.fileGroup}>
+                        <div
+                            aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
+                            className={classNames(styles.menuBarItem, styles.hoverable)}
+                            onClick={this.props.onOpenTipLibrary}
+                        >
+                            <img
+                                className={styles.helpIcon}
+                                src={helpIcon}
+                            />
+                            <span className={styles.tutorialsLabel}>
+                                <FormattedMessage {...ariaMessages.tutorials} />
+                            </span>
+                        </div>
+                    </div>
+                    <Divider className={classNames(styles.divider)} />
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
                             <MenuBarItemTooltip
@@ -668,46 +709,6 @@ class MenuBar extends React.Component {
                             )
                         )}
                         {this.props.canRemix ? remixButton : []}
-                    </div>
-                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
-                        {this.props.enableCommunity ? (
-                            (this.props.isShowingProject || this.props.isUpdating) && (
-                                <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
-                                    {
-                                        waitForUpdate => (
-                                            <CommunityButton
-                                                className={styles.menuBarButton}
-                                                /* eslint-disable react/jsx-no-bind */
-                                                onClick={() => {
-                                                    this.handleClickSeeCommunity(waitForUpdate);
-                                                }}
-                                                /* eslint-enable react/jsx-no-bind */
-                                            />
-                                        )
-                                    }
-                                </ProjectWatcher>
-                            )
-                        ) : (this.props.showComingSoon ? (
-                            <MenuBarItemTooltip id="community-button">
-                                <CommunityButton className={styles.menuBarButton} />
-                            </MenuBarItemTooltip>
-                        ) : [])}
-                    </div>
-                    <Divider className={classNames(styles.divider)} />
-                    <div className={styles.fileGroup}>
-                        <div
-                            aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
-                            className={classNames(styles.menuBarItem, styles.hoverable)}
-                            onClick={this.props.onOpenTipLibrary}
-                        >
-                            <img
-                                className={styles.helpIcon}
-                                src={helpIcon}
-                            />
-                            <span className={styles.tutorialsLabel}>
-                                <FormattedMessage {...ariaMessages.tutorials} />
-                            </span>
-                        </div>
                     </div>
                 </div>
 

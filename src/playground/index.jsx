@@ -7,6 +7,7 @@ import 'intl'; // For Safari 9
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import analytics from '../lib/analytics-kiwrious';
 import AppStateHOC from '../lib/app-state-hoc.jsx';
 import BrowserModalComponent from '../components/browser-modal/browser-modal.jsx';
 import supportedBrowser from '../lib/supported-browser';
@@ -19,6 +20,9 @@ log.info(`version ${window?.configs?.['APP_VERSION'] || process.env.APP_VERSION}
 log.info(`cloud_run_service ${window?.configs?.['CLOUD_RUN_SERVICE'] || process.env.CLOUD_RUN_SERVICE}`);
 log.info(`padlet_target ${window?.configs?.['PADLET_TARGET'] || process.env.PADLET_TARGET}`);
 log.info(`analytics_id ${window?.configs?.['GA_ID'] || process.env.GA_ID}`);
+
+// Register "base" page view
+analytics.pageview('/');
 
 const appTarget = document.createElement('div');
 appTarget.className = styles.app;

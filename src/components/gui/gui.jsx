@@ -479,7 +479,7 @@ const mapStateToProps = state => ({
     // This is the button's mode, as opposed to the actual current state
     stageSizeMode: state.scratchGui.stageSize.stageSize,
     shareModalVisible: state.scratchGui.modals.shareProject,
-    isSharing: state.scratchGui.modals.loadingShare
+    isSharing: state.scratchGui.modals.loadingShare,
     blocksId: state.scratchGui.timeTravel.year.toString(),
     stageSizeMode: state.scratchGui.stageSize.stageSize,
     theme: state.scratchGui.theme.theme
