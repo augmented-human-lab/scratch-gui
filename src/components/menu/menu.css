@@ -4,7 +4,7 @@
     position: absolute;
     border: 1px solid $ui-black-transparent;
     border-radius: 0 0 8px 8px;
-    background-color: $looks-secondary;
+    background-color: #F75808;
     padding: 0;
     margin: 0;
     min-width: 186px;
@@ -89,11 +89,11 @@
 }
 
 .submenu > .menu::-webkit-scrollbar-track {
-    background: $looks-secondary;
+    background: #F75808;
 }
 
 .submenu > .menu::-webkit-scrollbar-thumb {
     background-color: $ui-black-transparent;
     border-radius: 12px;
-    border: 3px solid $looks-secondary;
+    border: 3px solid #F75808;
 }
