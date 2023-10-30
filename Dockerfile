@@ -12,13 +12,15 @@ WORKDIR /usr/src/scratch-gui
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install
 
-
 # Copy files from scratch VM
 RUN rm -rf ./node_modules/scratch-vm
 COPY --from=vm-stage /usr/src/scratch-vm ./node_modules/scratch-vm/
 
 # Copy source
 COPY . .
+
+# Download micro:bit hex file
+RUN npm run prepublish
 
 # Update version number
 ARG BUILD_VERSION
