@@ -119,3 +119,22 @@
     z-index: 1;
     font-weight: 500;
 }
+
+.shared-title {
+    color: #575e75;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.shared-description {
+    color: #084551;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.125rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}

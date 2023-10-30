@@ -13,6 +13,7 @@ const MODAL_CONNECTION = 'connectionModal';
 const MODAL_TIPS_LIBRARY = 'tipsLibrary';
 const MODAL_SHARE_PROJECT = 'shareProject';
 const MODAL_LOADING_SHARE = 'loadingShare';
+const MODAL_PROJECT_SUBMITTED = 'projectSubmitted';
 
 const initialState = {
     [MODAL_BACKDROP_LIBRARY]: false,
@@ -26,7 +27,8 @@ const initialState = {
     [MODAL_CONNECTION]: false,
     [MODAL_TIPS_LIBRARY]: false,
     [MODAL_SHARE_PROJECT]: false,
-    [MODAL_LOADING_SHARE]: false
+    [MODAL_LOADING_SHARE]: false,
+    [MODAL_PROJECT_SUBMITTED]: false
 };
 
 const reducer = function (state, action) {
@@ -89,6 +91,9 @@ const openShareModal = function () {
 const openLoadingShare = function () {
     return openModal(MODAL_LOADING_SHARE);
 };
+const openConfirmationModal = function () {
+    return openModal(MODAL_PROJECT_SUBMITTED);
+};
 const openTipsLibrary = function () {
     return openModal(MODAL_TIPS_LIBRARY);
 };
@@ -128,6 +133,9 @@ const closeShareModal = function () {
 const closeLoadingShare = function () {
     return closeModal(MODAL_LOADING_SHARE);
 };
+const closeConfirmationModal = function () {
+    return closeModal(MODAL_PROJECT_SUBMITTED);
+};
 export {
     reducer as default,
     initialState as modalsInitialState,
@@ -137,6 +145,7 @@ export {
     openLoadingProject,
     openLoadingShare,
     openShareModal,
+    openConfirmationModal,
     openSoundLibrary,
     openSpriteLibrary,
     openSoundRecorder,
@@ -154,5 +163,6 @@ export {
     closeTelemetryModal,
     closeTipsLibrary,
     closeConnectionModal,
-    closeShareModal
+    closeShareModal,
+    closeConfirmationModal
 };

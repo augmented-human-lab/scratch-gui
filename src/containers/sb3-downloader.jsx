@@ -8,7 +8,7 @@ import downloadBlob from '../lib/download-blob';
 import GoogleAnalytics from 'react-ga';
 
 import {
-    closeLoadingShare, openShareModal
+    closeLoadingShare, openShareModal, openConfirmationModal
 } from '../reducers/modals.js';
 
 const CLOUD_RUN_SERVICE = (window?.configs?.['CLOUD_RUN_SERVICE'] || process.env.CLOUD_RUN_SERVICE);
@@ -123,6 +123,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     onShareSuccess: () => {
         dispatch(closeLoadingShare());
+        dispatch(openConfirmationModal());
     },
     onShareFail: () => {
         dispatch(closeLoadingShare());
