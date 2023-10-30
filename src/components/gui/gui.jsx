@@ -43,6 +43,7 @@ import soundsIcon from './icon--sounds.svg';
 
 import ShareModal from '../../containers/share-modal.jsx';
 import SharingLoaderComponent from '../sharing-loader/sharing-loader.jsx';
+import ConfirmationModal from '../../containers/confirmation-modal.jsx';
 
 const messages = defineMessages({
     addExtension: {
@@ -121,6 +122,7 @@ const GUIComponent = props => {
         onTelemetryModalOptIn,
         onTelemetryModalOptOut,
         shareModalVisible,
+        confirmationModalVisible,
         showComingSoon,
         soundsTabVisible,
         stageSizeMode,
@@ -209,6 +211,9 @@ const GUIComponent = props => {
                 ) : null}
                 {shareModalVisible ? (
                     <ShareModal />
+                ) : null}
+                {confirmationModalVisible ? (
+                    <ConfirmationModal />
                 ) : null}
                 {costumeLibraryVisible ? (
                     <CostumeLibrary
@@ -442,6 +447,7 @@ GUIComponent.propTypes = {
     onToggleLoginOpen: PropTypes.func,
     renderLogin: PropTypes.func,
     shareModalVisible: PropTypes.bool,
+    confirmationModalVisible: PropTypes.bool,
     showComingSoon: PropTypes.bool,
     soundsTabVisible: PropTypes.bool,
     stageSizeMode: PropTypes.oneOf(Object.keys(STAGE_SIZE_MODES)),
@@ -480,6 +486,7 @@ const mapStateToProps = state => ({
     stageSizeMode: state.scratchGui.stageSize.stageSize,
     shareModalVisible: state.scratchGui.modals.shareProject,
     isSharing: state.scratchGui.modals.loadingShare,
+    confirmationModalVisible: state.scratchGui.modals.projectSubmitted,
     blocksId: state.scratchGui.timeTravel.year.toString(),
     stageSizeMode: state.scratchGui.stageSize.stageSize,
     theme: state.scratchGui.theme.theme
