@@ -68,7 +68,6 @@ class SB3Downloader extends React.Component {
                         action: 'Click',
                         label: 'Share Project'
                     });
-                    window.open(PADLET_TARGET, '_blank');
                     this.props.onShareSuccess();
                 } else {
                     this.props.onShareFail();
